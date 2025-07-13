@@ -2,39 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* Train Schedule App Design System
+Professional transportation theme with blues and clean typography
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 220 20% 98%;
+    --foreground: 225 15% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 225 15% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 225 15% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 213 94% 35%;
+    --primary-foreground: 220 20% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 213 25% 92%;
+    --secondary-foreground: 225 15% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 213 15% 95%;
+    --muted-foreground: 225 10% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 142 76% 36%;
+    --accent-foreground: 220 20% 98%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 220 20% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 213 20% 90%;
+    --input: 220 15% 96%;
+    --ring: 213 94% 35%;
+
+    /* Custom train app colors */
+    --train-blue: 213 94% 35%;
+    --train-blue-light: 213 94% 85%;
+    --station-gray: 225 10% 65%;
+    --time-green: 142 76% 36%;
+    --delay-orange: 25 95% 53%;
+    --on-time-green: 142 76% 36%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(213 94% 35%), hsl(213 94% 45%));
+    --gradient-station: linear-gradient(180deg, hsl(220 20% 98%), hsl(213 15% 95%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(213 15% 98%));
+
+    /* Shadows */
+    --shadow-card: 0 4px 12px hsl(213 94% 35% / 0.08);
+    --shadow-schedule: 0 2px 8px hsl(225 15% 15% / 0.06);
+    --shadow-search: 0 8px 24px hsl(213 94% 35% / 0.12);
+
+    /* Typography */
+    --font-schedule: ui-monospace, 'SF Mono', 'Monaco', 'Cascadia Code', monospace;
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --radius: 0.5rem;
 

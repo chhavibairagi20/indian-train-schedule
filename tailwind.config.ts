@@ -61,7 +61,31 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Train app specific colors
+				'train-blue': 'hsl(var(--train-blue))',
+				'train-blue-light': 'hsl(var(--train-blue-light))',
+				'station-gray': 'hsl(var(--station-gray))',
+				'time-green': 'hsl(var(--time-green))',
+				'delay-orange': 'hsl(var(--delay-orange))',
+				'on-time-green': 'hsl(var(--on-time-green))'
+			},
+			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-station': 'var(--gradient-station)',
+				'gradient-card': 'var(--gradient-card)'
+			},
+			boxShadow: {
+				'card': 'var(--shadow-card)',
+				'schedule': 'var(--shadow-schedule)',
+				'search': 'var(--shadow-search)'
+			},
+			fontFamily: {
+				'schedule': 'var(--font-schedule)'
+			},
+			transitionTimingFunction: {
+				'smooth': 'var(--transition-smooth)',
+				'bounce': 'var(--transition-bounce)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
